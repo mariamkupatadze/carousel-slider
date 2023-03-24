@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+
+.carousel{
+    width: 100%;
+    height: 100vh;   
+}
+
+.arrows{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+}
+
+.next, .previous{
+    position: absolute;
+    font-size: 80px;
+    color: rgb(6, 144, 189);
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20%;
+    opacity: 0.8;
+    outline: 2px solid white;
+    outline-offset: 5px;
+    cursor: pointer;
+}
+
+.next:hover, .previous:hover{
+    opacity: 1;
+}
+
+.next{
+    right: 10%;
+}
+
+.previous{
+    left:10%;
+}
+
+.carousel-box {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.carousel-item.active{
+    display: flex;
+}
+
+.carousel-caption{
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    padding: 30px 30px;
+    border-radius: 30px;
+    outline: 2px solid white;
+    outline-offset: 5px;
+}
+
+.carousel-caption h1{
+    color: rgb(6, 144, 189)
+}
+
+.indicators{
+    position: absolute;
+    bottom:5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+}
+
+.indicator{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    outline: 4px solid white;
+    outline-offset: 3px;
+    cursor: pointer;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.indicator.active{
+    opacity: 1;
+}
+
+.auto{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(93, 87, 87);
+    color: white;
+    position: absolute;
+    top:10px;
+    right:10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.auto span{
+    background-color: white;
+    color: rgb(93, 87, 87);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 18px;
+}
+
+.autoOn{
+   display: none;
+}
